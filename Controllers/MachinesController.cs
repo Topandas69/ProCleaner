@@ -77,7 +77,7 @@ namespace ProCleaner.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Brand,Capacity,Color,Material,Weight,Price")] Machine machine)
+        public async Task<IActionResult> Create([Bind("Id,Brand,Capacity,Color,Material,Weight,Price,Rating")] Machine machine)
         {
             if (ModelState.IsValid)
             {
@@ -109,7 +109,7 @@ namespace ProCleaner.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Brand,Capacity,Color,Material,Weight,Price")] Machine machine)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Brand,Capacity,Color,Material,Weight,Price,Rating")] Machine machine)
         {
             if (id != machine.Id)
             {
