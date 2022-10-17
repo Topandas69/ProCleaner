@@ -29,7 +29,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -38,7 +39,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -47,7 +49,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -56,7 +59,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -65,7 +69,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -74,7 +79,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -83,7 +89,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -92,7 +99,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -101,7 +109,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     },
                     new Machine
                     {
@@ -110,7 +119,8 @@ namespace ProCleaner.Models
                         Color = "White",
                         Material = "Steel",
                         Weight = 4,
-                        Price = 59.99M
+                        Price = 59.99M,
+                        Rating = 2.5M
                     }
                 );
                 context.SaveChanges();
