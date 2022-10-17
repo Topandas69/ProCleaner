@@ -20,9 +20,32 @@ namespace ProCleaner.Controllers
         }
 
         // GET: Machines
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string machineColor, string searchString)
         {
-            return View(await _context.Machine.ToListAsync());
+
+            IQueryable<string> colorQuery = from m in _context.Machine
+                                            orderby m.Color
+                                            select m.Color;
+
+            var machines = from m in _context.Machine
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                machines = machines.Where(s => s.Brand.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(machineColor))
+            {
+                machines = machines.Where(x => x.Color == machineColor);
+            }
+
+            var machineColorVM = new MachineColorViewModel
+            {
+                Colors = new SelectList(await colorQuery.Distinct().ToListAsync()),
+                Machines = await machines.ToListAsync()
+            };
+            return View(machineColorVM);
         }
 
         // GET: Machines/Details/5
